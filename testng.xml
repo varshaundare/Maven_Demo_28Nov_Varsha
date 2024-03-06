@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="testNG.RetryAnalysis.IAnnotationTransformationExample"></listener>
+    </listeners>
+    <parameter name="courseName" value="Selenium"></parameter>
+    <parameter name="cityName" value="Pune"></parameter>
+    <parameter name="browserName" value="edge"></parameter>
+    <test verbose="2" preserve-order="true" parallel="false" thread-count="4" name="C:/Users/Sampat/IdeaProjects/Maven_Demo_28Nov_Varsha">
+        <classes>
+            <class name="testNG.Parameterization.WithParametrizationExample"></class>
+            <class name="testNG.Annotation.BeforeClassAfterClassAnnotation">
+                <methods>
+                    <include name="testCase1"/>
+                    <include name="testCase2"/>
+                </methods>
+            </class>
+            <class name="testNG.Annotation.BeforeMethodAfterMethodDemo">
+                <methods>
+                    <include name="testCase1"/>
+                    <include name="testCase2"/>
+                </methods>
+            </class>
+            <class name="testNG.Annotation.BeforeMethodAfterMethodExample">
+                <methods>
+                    <include name="testCase1"/>
+                    <include name="testCase2"/>
+                </methods>
+            </class>
+            <class name="testNG.Annotation.DependsOnGroupExample">
+                <methods>
+                    <include name="verifyCashBackOffer"/>
+                    <include name="verifyFundsTransfer"/>
+                </methods>
+            </class>
+            <class name="testNG.Annotation.DependsOnMethodExample">
+                <methods>
+                    <include name="verifyLogin"/>
+                    <include name="verifyFundsTransfer"/>
+                </methods>
+            </class>
+            <class name="testNG.Annotation.InvocationCountExample">
+                <methods>
+                    <include name="iCountExample"/>
+                </methods>
+            </class>
+            <class name="testNG.BasicTestNGExample">
+                <methods>
+                    <include name="testCase1"/>
+                    <include name="testCase2"/>
+                </methods>
+            </class>
+            <class name="testNG.Priority.PriorityExample">
+                <methods>
+                    <include name="testScriptA"/>
+                    <include name="testScriptF"/>
+                    <include name="testScriptD"/>
+                    <include name="testScriptC"/>
+                    <include name="testScriptE"/>
+                    <include name="testScriptB"/>
+                </methods>
+            </class>
+            <class name="testNG.Priority.WithoutPriorityExample">
+                <methods>
+                    <include name="testScriptA"/>
+                    <include name="testScriptF"/>
+                    <include name="testScriptD"/>
+                    <include name="testScriptC"/>
+                    <include name="testScriptE"/>
+                    <include name="testScriptB"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
