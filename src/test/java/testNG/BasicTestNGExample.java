@@ -21,6 +21,7 @@ public class BasicTestNGExample {
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://www.google.co.in/");
         driver.manage().window().maximize();
+        System.out.println("Good Evening....");
         driver.close();
     }
 }
