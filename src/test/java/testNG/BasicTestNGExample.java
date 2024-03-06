@@ -12,6 +12,7 @@ public class BasicTestNGExample {
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://www.facebook.com/");
         driver.manage().window().maximize();
+        System.out.println("Hello Everyone");
         driver.close();
     }
     @Test
